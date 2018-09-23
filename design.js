@@ -45,35 +45,29 @@ function shuffle(array) {
 /*<event-target>.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);*/
 deck.addEventListener('click', function (event) {
     const clickTarget = event.target;
-    toggleCard(clickTarget);
+
     if (isClickValid(clickTarget)) {
         if (clockOff) {
             startClock();
             clockOff = false;         //if the game started, then turn on the clock
         }
+        toggleCard(clickTarget);
         addToggleCard(clickTarget);        //if the card was clicked, then add it to toggledCards array and check for match
         if (toggledCards.length === 2) {
-            checkForMatch(clickTarget);
             addMove();
+            checkForMatch(clickTarget);
             checkScore();
         }
-
+        const TOTAL_PAIRS = 8;
         if (matched === TOTAL_PAIRS) {
             gameOver();
         }
-    } else {
-        toggledCards = [];
     }
-
+   
 });
-
 /*  - display the card's symbol (put this functionality in another function that you call from this one)*/
 function toggleCard(card) {
-    if(card){
         card.classList.toggle('open');
-    }else{
-        console.log("error");
-    }  
 }
 
 /*  - add the card to a *list* of "open" cards (put this functionality in another function that you call from this one)*/
