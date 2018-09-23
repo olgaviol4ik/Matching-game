@@ -1,10 +1,10 @@
 # Memory Game Project
-(https://github.com/olgaviol4ik/matchinggame)
+https://github.com/olgaviol4ik/matchinggame
 
 The Memory Game Project is all about demonstrating skills of JavaScript. It's a complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!
 The styling of the game is optional.
 
-Project specification can be found here (https://review.udacity.com/#!/rubrics/591/view).
+Project specification can be found here https://review.udacity.com/#!/rubrics/591/view.
 
 ## Instructions for the projects were:
 1. Build very simple grid of cards.
