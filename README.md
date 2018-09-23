@@ -1,48 +1,30 @@
-Memory Game Project
-https://github.com/olgaviol4ik/matchinggame
+# Memory Game Project
+(https://github.com/olgaviol4ik/matchinggame)
 
-Instructions
--The project has some HTML and CSS styling that came with the files already since mentor mentioned that it would take time to code those from scratch.
+The Memory Game Project is all about demonstrating skills of JavaScript. It's a complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!
+The styling of the game is optional.
 
--The JS file has some standard start up code, where first we had to declare variables, and functions for Memory Game project. The HTML and CSS files, were a little modified at the end, but primarily the JavaScript file was the one that was coded basically from scratch.
+Project specification can be found here (https://review.udacity.com/#!/rubrics/591/view).
 
--At the end there's a pop up window specifying that the player has won the game, it's an interactive little window with the help from sweet alert that one of the mentors suggested to use.
+## Instructions for the projects were:
+1. Build very simple grid of cards.
+2. Get something clickable on the page.
+3. Figure out HTML needed to represent a card.
+    Remember you need to represent two sides of the card. 
+    Are you going to have two separate elements stacked on top of each other?
+4. Add functionality to handle clicks. This should reveal the hidden side of each card.
+5. Work on the matching card logic. How does your game “know” if a player guesses correctly 
+or incorrectly?
+6. Work on the winning condition. How does your game know if a player has one.
+7. Allow your game logic and functionality to dictate the styling.
 
-**Getting Started
+**Work with questions:**
+1. What’s the ideal workflow?
+2. How many files do I need?
+3. Do I modify the HTML first or the CSS? Just start from javascript file.
+4. How many JavaScript functions do I need? Good question, lets count:
+5. Should my function be this many lines of code?
+6. What about closure?
 
--At the beginning a grid of cards needs to be defined, we create a list that holds all the cards, then all of our variables we are going to use, along with the functions.
 
--We need to shuffle the list of cards using the provided shuffle method that came with the JS file, then add each card html's to the page.
-
--We need to set up our event listeners for a card, once the card is clicked it needs to display the card symbol, keep the card open and open another card, if both cards match we lock the cards in one position.
-
--If the cards do not match we flip back both cards, keeping the ones that are already matched.
-
--We need to set up a move counter this is very important because it will keep the number of licks we make until we finish the game which is matching all 16 cards. And also set up a star rating method.
-
--Also we need to set up a timer in minutes and seconds, so we know at the we how long it took to match all the cards.
-
--At the end there has to be a pop up message that says "Congratulations!", along with the number of moves it took, stars, and time it took to finish.
-
-**Prerequisites
-
--For this game we need to have the preset version of html, and css to start the game, we will worry about design and colors at the end.
-
--Also you need to have your stylesheets that you're going to use in this case, we used bootstrapcdn, fonts.googleapis, ajax.googleapis, all these came already with the initial github repository.
-
-**Installing
-
-Example for our variables: we could use let, const or var.
-
-Evry time you declare a function you need to test it in the console making sure it works
-
-**Running the tests
-
--To test the code in JS I used codepen.io, I was able to see my html, css, and JS, and if I wanted I could use the console in the bottom, is nice because you can see what is what in different colors, also I used sublime to write all the JS code and once was ready I used the console in devtools in GoogleChrome to clear up the errors.
-
-**Break down into end to end tests
-
--It is crucial to write all your code in your code editor first, I used visual studio code once is clean and ready bring it to Github to load the file. And always to use the console to test continuosuly.
-
-Contributing
 This repository https://github.com/udacity/fend-project-memory-game was the starter code for all Udacity students.
